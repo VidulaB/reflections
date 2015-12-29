@@ -5,3 +5,24 @@ When multiple contributors are going to work on a certain project, you would wan
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
 Pulling changes manually gives you more control over updating your local git repository. This way, you can wait until remote repository is modified and tested for the change you want to implement, and then only reflect those changes in your local repository. If Git does this automatically, it might pull changes in the middle of the modification process.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Differences:
+------------
+Forks:    1. Makes a copy of a GitHub repository on GitHub without copying it on             your computer and then pushing it on GitHub
+          2. Keeps track of how many people forked a certain repository
+Clones:   1. Makes a copy of a repository from GitHub to your computer OR
+             from your computer to another place on your computer 
+          2. Doesn't keep track of number of clones made from a repository
+Branches: 1. Doesn't make a copy of the repository, but let's you make changes 
+             to your repository in another thread beyond a certain commit/point              in the file.
+          2. Keeps track of how many branches were created in a repository
+
+When to use:
+------------
+Forks:    When you don't have permission to modify a repository, you fork it to make a copy on GitHub in your account, modify it, and then share it to the world.
+Clones:   When you want to edit a GitHub repository on your computer, you clone it onto your computer. You can push changes to GitHub repository after you are done.
+Branches: When you need to try out a new feature in an already working repository, OR you want to implement an already working repository in another language, OR if you want to try to redesign a certain part of the code, you create a new branch and work on it independently, without disturbing the repository that is shared to with the public.
+
+
