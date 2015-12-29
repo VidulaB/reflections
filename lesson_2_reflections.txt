@@ -5,3 +5,32 @@ When you initialize a repository, Git creates a folder called .git to store all 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 Staging area is an intermediate area between working directory and repository, where files selected for a single commit are stored. An advantage of this is thatin case you change your mind about which changes to add to the commit, you can always edit the stage area by removing or replacing the files that are going to be clubbed in that commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+Before commiting your changes, you can run 'git diff --staging' to see exactly what changes are going to be added in the new commit, by comparing files with the latest commit.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+1. When you want to try whole new approach of programming after a certain point of time, still keeping the current code accessible, you can create a new branch.If the new approach doesn't quite work, you can continue with the main branch.
+2. When you want to create a version of your code in another language, you can fork out a branch, and update the code there. In that case, both these versions can be used.
+3. Git branch helps keep your project organized, particularly when you are sharing it publicly. YOu have your master branch to share publicly, and can simultaneously make changes to another branch for further development.
+4. You can also have other kinds of branches like experimental branch, unique feature branch etc. that you don't want to share publicly, unless you are done working on them, fixing any bugs etc.
+Branches allow you to keep your code undisturbed but further expand on it independently in another branch
+
+How do the diagrams help you visualize the branch structure?
+
+Diagrams help us visualize which branch was forked from which commit, and which commits are unreachable.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches together combines all the commits from both the branches. The way we draw diagram clearly shows us which commits are included and which are not..
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Automatic merging : 
+Pros: Easier for users
+Cons: Might make the wrong choice about which changes to keep and which to leave
+Always doing manually:
+Pros: You can make sure to include correct changes in the file
+Cons: You have to do it manually even if it is obvious  which changes arecorrect.
