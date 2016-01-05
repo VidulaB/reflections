@@ -25,4 +25,6 @@ Forks:    When you don't have permission to modify a repository, you fork it to 
 Clones:   When you want to edit a GitHub repository on your computer, you clone it onto your computer. You can push changes to GitHub repository after you are done.
 Branches: When you need to try out a new feature in an already working repository, OR you want to implement an already working repository in another language, OR if you want to try to redesign a certain part of the code, you create a new branch and work on it independently, without disturbing the repository that is shared to with the public.
 
+What is the benefit of having a copy of the last known state of the remote stored locally?
 
+A copy of the last known state of the remote stored locally helps build features on top of the remote changes. It also helps to combine remote changes with your local changes.
